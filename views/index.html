@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Spin to Win!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <div class="stat-container">
+      <span>The Winner is </span><span class="winner"></span>
+    </div>
+    <div class="message-box"></div>
+    <div class="wheel-container">
+      <ul class="wheel">
+        <li><div class="text">Player1</div></li>
+        <li><div class="text">Player2</div></li>
+        <li><div class="text">Player3</div></li>
+        <li><div class="text">Player4</div></li>
+        <li><div class="text">Player5</div></li>
+        <li><div class="text">Player6</div></li>
+      </ul>
+      <div class="spin-button-container">
+        <div class="spin-button">Spin</div>
+      </div>
+    </div>
+    <div class="player-container">
+      <ul class="player-list">
+        <li><input type="checkbox" value="Player1"/>Player1</li>
+        <li><input type="checkbox" value="Player2"/>Player2</li>
+        <li><input type="checkbox" value="Player3"/>Player3</li>
+        <li><input type="checkbox" value="Player4"/>Player4</li>
+        <li><input type="checkbox" value="Player5"/>Player5</li>
+        <li><input type="checkbox" value="Player6"/>Player6</li>
+      </ul>
+      <input class="player-add" type="text" placeholder="Add player"/>
+    </div>
+  </body>
+</html>
