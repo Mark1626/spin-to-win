@@ -1,0 +1,25 @@
+{
+  "//1": "describes your app and it's dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "Spin-to-win",
+  "version": "0.0.1",
+  "description": "Spin the Wheel !!! ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "node-sass-middleware": "0.9.8"
+  },
+  "engines": {
+    "node": "8.11.4"
+  },
+  "keywords": [
+    "node",
+    "spin",
+    "experiment"
+  ],
+  "license": "MIT"
+}
