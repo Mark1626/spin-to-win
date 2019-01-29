@@ -5,6 +5,8 @@ node_js:
 
 cache: yarn
 
+script: yarn build
+
 branches:
   only:
     - master
