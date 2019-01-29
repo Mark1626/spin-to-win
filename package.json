@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack && node server.js",
     "build": "webpack",
-		"test": "echo 'No test are present'"
+    "test": "echo 'No test are present'"
   },
   "dependencies": {
     "express": "^4.12.4",

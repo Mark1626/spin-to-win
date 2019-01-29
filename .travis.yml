@@ -3,13 +3,13 @@ language: node_js
 cache: yarn
 
 branches:
-	only:
-		- ci
+  only:
+    - ci
 
 deploy:
-	provider: pages
-	skip-cleanup: true
-	github-token: $GITHUB_TOKEN
-	keep-history: true
-	on:
-		branch: master
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
