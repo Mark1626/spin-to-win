@@ -1,25 +1,31 @@
 {
-  "//1": "describes your app and it's dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
   "name": "Spin-to-win",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Spin the Wheel !!! ",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "webpack && node server.js",
+    "build": "webpack"
   },
   "dependencies": {
     "express": "^4.12.4",
-    "node-sass-middleware": "0.9.8"
+    "jquery": "^3.3.1"
   },
   "engines": {
-    "node": "8.11.4"
+    "node": "10.15.0"
   },
   "keywords": [
     "node",
     "spin",
     "experiment"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
 }

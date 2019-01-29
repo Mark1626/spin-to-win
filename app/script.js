@@ -1,3 +1,6 @@
+import './style.scss'
+const $ = require('jquery')
+
 var clicks = 0;
 var winner = 1;
 var number_of_players = 6;
