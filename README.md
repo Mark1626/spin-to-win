@@ -7,6 +7,6 @@ Spin To Win !!!
 
 Well then let the wheel choose for you.
 
-**[Live Here](https://spin-to-win.glitch.me)**
+**[Live Here](https://m4rk9696.github.io/spin-to-win/)**
 
 :boom: :tada: Spin the wheel and choose the winner.
