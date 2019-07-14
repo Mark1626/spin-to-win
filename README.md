@@ -1,6 +1,8 @@
 Spin To Win !!!
 =================
 
+[![Build Status](https://travis-ci.com/M4rk9696/spin-to-win.svg?branch=master)](https://travis-ci.com/M4rk9696/spin-to-win)
+
 ![oops, broken image](spin-to-win.png)
 
 ### Have a hard time choosing something???
