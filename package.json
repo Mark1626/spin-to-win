@@ -1,6 +1,6 @@
 {
   "name": "Spin-to-win",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Spin the Wheel !!! ",
   "main": "server.js",
   "scripts": {
