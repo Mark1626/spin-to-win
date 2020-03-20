@@ -1,28 +1,37 @@
 {
   "name": "Spin-to-win",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Spin the Wheel !!! ",
-  "main": "server.js",
-  "scripts": {
-    "start": "webpack && node server.js",
-    "build": "webpack",
-    "test": "echo 'No test are present'"
-  },
+  "private": true,
   "dependencies": {
-    "jquery": "^3.4.1"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0",
+    "react-transition-group": "^4.3.0",
+    "styled-components": "^5.0.1"
   },
-  "keywords": [
-    "node",
-    "spin",
-    "experiment"
-  ],
-  "license": "MIT",
-  "devDependencies": {
-    "css-loader": "^3.0.0",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.6"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
