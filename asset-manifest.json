@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/static/js/main.96d96876.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.62e7d64b.js",
-    "static/js/2.74cec7a4.chunk.js": "/static/js/2.74cec7a4.chunk.js",
-    "favicon.ico": "/favicon.ico",
-    "index.html": "/index.html",
-    "logo192.png": "/logo192.png",
-    "logo512.png": "/logo512.png",
-    "manifest.json": "/manifest.json",
-    "precache-manifest.cc8d185f71541ef1e9850a4efa08c6e6.js": "/precache-manifest.cc8d185f71541ef1e9850a4efa08c6e6.js",
-    "robots.txt": "/robots.txt",
-    "service-worker.js": "/service-worker.js",
-    "static/js/2.74cec7a4.chunk.js.LICENSE.txt": "/static/js/2.74cec7a4.chunk.js.LICENSE.txt"
+    "main.js": "/spin-to-win/static/js/main.96d96876.chunk.js",
+    "runtime-main.js": "/spin-to-win/static/js/runtime-main.87105519.js",
+    "static/js/2.74cec7a4.chunk.js": "/spin-to-win/static/js/2.74cec7a4.chunk.js",
+    "favicon.ico": "/spin-to-win/favicon.ico",
+    "index.html": "/spin-to-win/index.html",
+    "logo192.png": "/spin-to-win/logo192.png",
+    "logo512.png": "/spin-to-win/logo512.png",
+    "manifest.json": "/spin-to-win/manifest.json",
+    "precache-manifest.3ed48db10288b216272270740f5731cc.js": "/spin-to-win/precache-manifest.3ed48db10288b216272270740f5731cc.js",
+    "robots.txt": "/spin-to-win/robots.txt",
+    "service-worker.js": "/spin-to-win/service-worker.js",
+    "static/js/2.74cec7a4.chunk.js.LICENSE.txt": "/spin-to-win/static/js/2.74cec7a4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.62e7d64b.js",
+    "static/js/runtime-main.87105519.js",
     "static/js/2.74cec7a4.chunk.js",
     "static/js/main.96d96876.chunk.js"
   ]
