@@ -1,0 +1,9 @@
+{
+  "files": {
+    "main.js": "/bundle.js",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "bundle.js"
+  ]
+}
