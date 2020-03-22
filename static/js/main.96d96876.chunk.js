@@ -22,7 +22,7 @@
             )
               return;
             window.addEventListener("load", function() {
-              console.log(n.env.PUBLIC_URL);
+              console.log(n, n.env, n.env.PUBLIC_URL);
               var t = "".concat(n.env.PUBLIC_URL, "/service-worker.js");
               r
                 ? (!(function(n, e) {
