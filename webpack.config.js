@@ -5,6 +5,7 @@ const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const InterpolateHtmlPlugin = require("react-dev-utils/InterpolateHtmlPlugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const webpack = require('webpack');
 
 const safePostCssParser = require("postcss-safe-parser");
 const fs = require("fs");
@@ -189,6 +190,11 @@ module.exports = {
       )
     ),
     new InterpolateHtmlPlugin(HtmlWebPackPlugin, env),
+    new webpack.DefinePlugin({
+      'process.env': {
+        PUBLIC_URL: publicPath
+      }
+    }),
     new ManifestPlugin({
       fileName: "asset-manifest.json",
       publicPath: publicPath,
