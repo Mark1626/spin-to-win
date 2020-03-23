@@ -192,7 +192,7 @@ module.exports = {
     new InterpolateHtmlPlugin(HtmlWebPackPlugin, env),
     new webpack.DefinePlugin({
       'process.env': {
-        PUBLIC_URL: publicPath
+        PUBLIC_URL: publicUrl
       }
     }),
     new ManifestPlugin({
