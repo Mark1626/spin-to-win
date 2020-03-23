@@ -6,7 +6,7 @@ export const MessageBox = styled.div`
   top: 50%;
   border: 2px solid;
   border-radius: 10px;
-  margin: 0 15vw;
+  margin: 0 20vw;
   padding: 16px;
   width: 50vw;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
