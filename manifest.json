@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/spin-to-win",
+  "start_url": "/spin-to-win/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

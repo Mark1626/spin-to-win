@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spin-to-win/logo512.png"
   },
   {
-    "revision": "1aa5eda620893464f5701754ed8b0cce",
+    "revision": "b2ccee33acd62a310e4546c1ec11f494",
     "url": "/spin-to-win/manifest.json"
   },
   {
