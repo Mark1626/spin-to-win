@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/spin-to-win/static/js/main.8328b1b2.chunk.js",
+    "main.js": "/spin-to-win/static/js/main.136756d5.chunk.js",
     "runtime-main.js": "/spin-to-win/static/js/runtime-main.87105519.js",
-    "static/js/2.e392cbb5.chunk.js": "/spin-to-win/static/js/2.e392cbb5.chunk.js",
+    "static/js/2.fe51d2b5.chunk.js": "/spin-to-win/static/js/2.fe51d2b5.chunk.js",
     "favicon.ico": "/spin-to-win/favicon.ico",
     "index.html": "/spin-to-win/index.html",
     "logo192.png": "/spin-to-win/logo192.png",
     "logo512.png": "/spin-to-win/logo512.png",
     "manifest.json": "/spin-to-win/manifest.json",
-    "precache-manifest.61db1265178c1ef0db26548485b0d6c8.js": "/spin-to-win/precache-manifest.61db1265178c1ef0db26548485b0d6c8.js",
+    "precache-manifest.891bcf03198a3e1283e00ed754dca9af.js": "/spin-to-win/precache-manifest.891bcf03198a3e1283e00ed754dca9af.js",
     "robots.txt": "/spin-to-win/robots.txt",
     "service-worker.js": "/spin-to-win/service-worker.js",
-    "static/js/2.e392cbb5.chunk.js.LICENSE.txt": "/spin-to-win/static/js/2.e392cbb5.chunk.js.LICENSE.txt"
+    "static/js/2.fe51d2b5.chunk.js.LICENSE.txt": "/spin-to-win/static/js/2.fe51d2b5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.87105519.js",
-    "static/js/2.e392cbb5.chunk.js",
-    "static/js/main.8328b1b2.chunk.js"
+    "static/js/2.fe51d2b5.chunk.js",
+    "static/js/main.136756d5.chunk.js"
   ]
 }

@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spin-to-win/favicon.ico"
   },
   {
-    "revision": "78e5586ce763ed22fe1d9821e230285b",
+    "revision": "7c545e1f95b259a0b6d8f8c581ebaf24",
     "url": "/spin-to-win/index.html"
   },
   {
@@ -24,16 +24,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spin-to-win/robots.txt"
   },
   {
-    "revision": "18ffe96a856bf98dd081",
-    "url": "/spin-to-win/static/js/2.e392cbb5.chunk.js"
+    "revision": "80af6f66e934e2e47f2b",
+    "url": "/spin-to-win/static/js/2.fe51d2b5.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/spin-to-win/static/js/2.e392cbb5.chunk.js.LICENSE.txt"
+    "url": "/spin-to-win/static/js/2.fe51d2b5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c1e6341f2224be13b0da",
-    "url": "/spin-to-win/static/js/main.8328b1b2.chunk.js"
+    "revision": "c87aecb97ae8b423aaad",
+    "url": "/spin-to-win/static/js/main.136756d5.chunk.js"
   },
   {
     "revision": "9be33d8a424fdd7ed2b5",
