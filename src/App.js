@@ -16,7 +16,7 @@ import {
 } from "./App.styles";
 import { Transition } from "react-transition-group";
 
-/** @type { function({players: string[], setWinner: any}): JSX.Element } */
+/** @type { function({players: {name: string, checked: boolean}[], setWinner: any}): JSX.Element } */
 const WheelComponont = ({ players, setWinner }) => {
   const [spin, setSpin] = useState(false);
   const [degree, setDegree] = useState(0);
@@ -38,7 +38,7 @@ const WheelComponont = ({ players, setWinner }) => {
     const winner =
       numberOfPlayers - Math.floor((spinDegree % 360) / sectionAngle) - 1;
     setTimeout(() => {
-      setWinner(players[winner]);
+      setWinner(players[winner].name);
     }, 5000);
 
     setSpin(true);
@@ -71,7 +71,7 @@ const WheelComponont = ({ players, setWinner }) => {
               ...transitionStyles[state]
             }}
           >
-            {players.map((player, i) => {
+            {players.map(({ name: player }, i) => {
               const angle = Math.floor(sectionAngle * i);
               const skewAngle = 90 - sectionAngle;
 
@@ -100,10 +100,10 @@ const WheelComponont = ({ players, setWinner }) => {
 /** @type { function(): JSX.Element } */
 const App = () => {
   const [players, setPlayers] = useState([
-    "Player1",
-    "Player2",
-    "Player3",
-    "Player4"
+    { name: "Player1", checked: true },
+    { name: "Player2", checked: true },
+    { name: "Player3", checked: true },
+    { name: "Player4", checked: true }
   ]);
   const [winner, setWinner] = useState("");
   const [newPlayer, setNewPlayer] = useState("");
@@ -117,11 +117,11 @@ const App = () => {
 
   const addPlayer = e => {
     if (e.keyCode === 13) {
-      if (players.indexOf(newPlayer) === -1) {
-        setPlayers([...players, newPlayer]);
-        setNewPlayer("");
-      } else {
+      if (players.find(player => newPlayer === player.name)) {
         setError(true);
+      } else {
+        setPlayers([...players, { name: newPlayer, checked: true }]);
+        setNewPlayer("");
       }
     }
   };
@@ -134,9 +134,9 @@ const App = () => {
 
   return (
     <>
-          <StatContainer>
-            <span>The Winner is {winner}</span>
-          </StatContainer>
+      <StatContainer>
+        <span>The Winner is {winner}</span>
+      </StatContainer>
       <Transition in={error} timeout={1000}>
         {state => (
           <MessageBox
@@ -148,14 +148,28 @@ const App = () => {
           </MessageBox>
         )}
       </Transition>
-      <WheelComponont players={players} setWinner={setWinner} />
+      <WheelComponont
+        players={players.filter(player => player.checked)}
+        setWinner={setWinner}
+      />
       <PlayerContainer>
         <PlayerList>
           {players.map((player, i) => {
             return (
               <Player key={i}>
-                <input type="checkbox" value={player} />
-                {player}
+                <input
+                  type="checkbox"
+                  onChange={event => {
+                    if (player.checked !== event.target.checked) {
+                      const newPlayers = [...players];
+                      newPlayers[i].checked = event.target.checked;
+                      setPlayers(newPlayers);
+                    }
+                  }}
+                  checked={player.checked}
+                  value={player.name}
+                />
+                {player.name}
               </Player>
             );
           })}
