@@ -18,6 +18,9 @@ import { Transition } from "react-transition-group";
 
 /** @type { function({players: {name: string, checked: boolean}[], setWinner: any}): JSX.Element } */
 const WheelComponont = ({ players, setWinner }) => {
+  if(players.length < 4) {
+    players = [...players, ...players];
+  }
   const [spin, setSpin] = useState(false);
   const [degree, setDegree] = useState(0);
   const colors = [
