@@ -13,6 +13,8 @@ export const usePlayers = () => {
     const playersPresent = localStorage.getItem("spin-to-win-players");
     if (!playersPresent) {
       playersPresent = defaultPlayers
+    } else {
+      playersPresent = JSON.parse(playersPresent);
     }
     setPlayers(playersPresent);
   }
