@@ -103,7 +103,7 @@ const WheelComponont = ({ players, setWinner }) => {
 
 /** @type { function(): JSX.Element } */
 const App = () => {
-  const {players, persistPlayers, fetchPlayers} = usePlayers()
+  const {players, persistPlayers } = usePlayers()
   const [winner, setWinner] = useState("");
   const [newPlayer, setNewPlayer] = useState("");
   const [error, setError] = useState(false);
@@ -113,10 +113,6 @@ const App = () => {
     exiting: { opacity: 0 },
     exited: { opacity: 0 }
   };
-
-  useEffect(() => {
-    fetchPlayers();
-  }, [])
 
   const addPlayer = e => {
     if (e.keyCode === 13) {

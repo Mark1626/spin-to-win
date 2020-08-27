@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const usePlayers = () => {
   const defaultPlayers = [
@@ -9,13 +9,13 @@ export const usePlayers = () => {
   ];
   const [players, setPlayers] = useState(defaultPlayers);
 
-  const fetchPlayers = () => {
+  useEffect(() => {
     let playersPresent = JSON.parse(localStorage.getItem("spin-to-win-players"));
     if (!playersPresent) {
       playersPresent = defaultPlayers
     }
     setPlayers(playersPresent);
-  }
+  }, []);
 
   const persistPlayers = (players) => {
     localStorage.setItem("spin-to-win-players", JSON.stringify(players));
@@ -24,7 +24,6 @@ export const usePlayers = () => {
 
   return {
     players,
-    fetchPlayers,
     persistPlayers,
   };
 };
