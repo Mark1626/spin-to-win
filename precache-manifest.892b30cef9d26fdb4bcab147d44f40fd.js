@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spin-to-win/favicon.ico"
   },
   {
-    "revision": "c4f606d7f45e280a4f36adc37426d655",
+    "revision": "404c8903f09b3c51973f230961ba62ea",
     "url": "/spin-to-win/index.html"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spin-to-win/static/js/2.fe51d2b5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3da89f32c34d8d2e9f8b",
-    "url": "/spin-to-win/static/js/main.7164ff1f.chunk.js"
+    "revision": "6ac22ddb1da91fdb7e7d",
+    "url": "/spin-to-win/static/js/main.9927a567.chunk.js"
   },
   {
     "revision": "9be33d8a424fdd7ed2b5",
