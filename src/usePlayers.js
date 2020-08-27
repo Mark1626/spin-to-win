@@ -18,7 +18,7 @@ export const usePlayers = () => {
   }
 
   const persistPlayers = (players) => {
-    localStorage.setItem("spin-to-win-players", players);
+    localStorage.setItem("spin-to-win-players", JSON.stringify(players));
     setPlayers(players);
   }
 
