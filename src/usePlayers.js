@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 export const usePlayers = () => {
   const defaultPlayers = [
     { name: "Player1", checked: true },
