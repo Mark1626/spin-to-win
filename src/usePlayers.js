@@ -10,11 +10,9 @@ export const usePlayers = () => {
   const [players, setPlayers] = useState(defaultPlayers);
 
   const fetchPlayers = () => {
-    const playersPresent = localStorage.getItem("spin-to-win-players");
+    let playersPresent = JSON.parse(localStorage.getItem("spin-to-win-players"));
     if (!playersPresent) {
       playersPresent = defaultPlayers
-    } else {
-      playersPresent = JSON.parse(playersPresent);
     }
     setPlayers(playersPresent);
   }
