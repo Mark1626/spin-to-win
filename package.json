@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Spin the Wheel !!! ",
   "private": true,
-  "homepage": "https://m4rk9696.github.io/spin-to-win/",
+  "homepage": "https://mark1626.github.io/spin-to-win/",
   "scripts": {
     "watch": "yarn build --watch",
     "build": "webpack",
