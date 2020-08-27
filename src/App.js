@@ -15,6 +15,7 @@ import {
   PlayerAdd
 } from "./App.styles";
 import { Transition } from "react-transition-group";
+import { usePlayers } from "./usePlayers";
 
 /** @type { function({players: {name: string, checked: boolean}[], setWinner: any}): JSX.Element } */
 const WheelComponont = ({ players, setWinner }) => {
@@ -102,12 +103,7 @@ const WheelComponont = ({ players, setWinner }) => {
 
 /** @type { function(): JSX.Element } */
 const App = () => {
-  const [players, setPlayers] = useState([
-    { name: "Player1", checked: true },
-    { name: "Player2", checked: true },
-    { name: "Player3", checked: true },
-    { name: "Player4", checked: true }
-  ]);
+  const {players, persistPlayers, fetchPlayers} = usePlayers()
   const [winner, setWinner] = useState("");
   const [newPlayer, setNewPlayer] = useState("");
   const [error, setError] = useState(false);
@@ -118,12 +114,16 @@ const App = () => {
     exited: { opacity: 0 }
   };
 
+  useEffect(() => {
+    fetchPlayers();
+  }, [])
+
   const addPlayer = e => {
     if (e.keyCode === 13) {
       if (players.find(player => newPlayer === player.name)) {
         setError(true);
       } else {
-        setPlayers([...players, { name: newPlayer, checked: true }]);
+        persistPlayers([...players, { name: newPlayer, checked: true }]);
         setNewPlayer("");
       }
     }
@@ -166,7 +166,7 @@ const App = () => {
                     if (player.checked !== event.target.checked) {
                       const newPlayers = [...players];
                       newPlayers[i].checked = event.target.checked;
-                      setPlayers(newPlayers);
+                      persistPlayers(newPlayers);
                     }
                   }}
                   checked={player.checked}
