@@ -11,9 +11,9 @@ export const usePlayers = () => {
 
   useEffect(() => {
     let playersPresent = JSON.parse(localStorage.getItem("spin-to-win-players"));
-    if (!playersPresent) {
+    // if (!playersPresent) {
       playersPresent = defaultPlayers
-    }
+    // }
     setPlayers(playersPresent);
   }, []);
 
