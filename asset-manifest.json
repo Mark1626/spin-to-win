@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/spin-to-win/static/js/main.c54ff985.chunk.js",
+    "main.js": "/spin-to-win/static/js/main.916847fa.chunk.js",
     "runtime-main.js": "/spin-to-win/static/js/runtime-main.87105519.js",
     "static/js/2.fe51d2b5.chunk.js": "/spin-to-win/static/js/2.fe51d2b5.chunk.js",
     "favicon.ico": "/spin-to-win/favicon.ico",
@@ -8,7 +8,7 @@
     "logo192.png": "/spin-to-win/logo192.png",
     "logo512.png": "/spin-to-win/logo512.png",
     "manifest.json": "/spin-to-win/manifest.json",
-    "precache-manifest.74a402b9c495d32b2f737c6902c4b6d1.js": "/spin-to-win/precache-manifest.74a402b9c495d32b2f737c6902c4b6d1.js",
+    "precache-manifest.0a9d2c6461960dbc517e86b009aa8b02.js": "/spin-to-win/precache-manifest.0a9d2c6461960dbc517e86b009aa8b02.js",
     "robots.txt": "/spin-to-win/robots.txt",
     "service-worker.js": "/spin-to-win/service-worker.js",
     "static/js/2.fe51d2b5.chunk.js.LICENSE.txt": "/spin-to-win/static/js/2.fe51d2b5.chunk.js.LICENSE.txt"
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.87105519.js",
     "static/js/2.fe51d2b5.chunk.js",
-    "static/js/main.c54ff985.chunk.js"
+    "static/js/main.916847fa.chunk.js"
   ]
 }
