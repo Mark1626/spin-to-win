@@ -80,6 +80,11 @@ const App = () => {
                   value={player.name}
                 />
                 {player.name}
+                <span onClick={() => {
+                  const newPlayers = [...players];
+                  newPlayers.splice(i, 1);
+                  persistPlayers(newPlayers)
+                }}>✖</span>
               </Player>
             );
           })}
