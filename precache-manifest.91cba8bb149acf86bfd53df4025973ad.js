@@ -1,18 +1,22 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e1267d9d946b0236cdf6ffd02890894",
+    "revision": "eb590a68037689e229f6ec68679daf3c",
     "url": "/spin-to-win/favicon.ico"
   },
   {
-    "revision": "3709eb824e1ee9e8f62bfa5e7d6b7bfe",
+    "revision": "6a946114c48b325833f2b2430b57d840",
     "url": "/spin-to-win/index.html"
   },
   {
-    "revision": "33dbdd0177549353eeeb785d02c294af",
+    "revision": "dcfa31a6a88c0f85a653726b0909450c",
+    "url": "/spin-to-win/logo.png"
+  },
+  {
+    "revision": "3760d918c2a8801e6ff63b44857ecfe7",
     "url": "/spin-to-win/logo192.png"
   },
   {
-    "revision": "917515db74ea8d1aee6a246cfbcc0b45",
+    "revision": "8baf770db4d205f5c906f54a8498ed72",
     "url": "/spin-to-win/logo512.png"
   },
   {
