@@ -16,7 +16,7 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
-  local-dir: build
+  local-dir: spin-to-win
   target-branch: gh-pages
   on:
     branch: master

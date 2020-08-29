@@ -50,7 +50,7 @@ const resolveModule = (resolveFn, filePath) => {
   return resolveFn(`${filePath}.js`);
 };
 const appIndexJs = resolveModule(resolveApp, "src/index");
-const appBuild = resolveApp("build");
+const appBuild = resolveApp("spin-to-win");
 const getPublicUrl = appPackageJson => require(appPackageJson).homepage;
 function getServedPath(appPackageJson) {
   const publicUrl = getPublicUrl(appPackageJson);
