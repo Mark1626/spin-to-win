@@ -14,7 +14,7 @@ import { Wheel } from "./components/Wheel";
 
 /** @type { function(): JSX.Element } */
 const App = () => {
-  const {players, persistPlayers } = usePlayers()
+  const { players, persistPlayers } = usePlayers();
   const [winner, setWinner] = useState("");
   const [newPlayer, setNewPlayer] = useState("");
   const [error, setError] = useState(false);
@@ -22,12 +22,12 @@ const App = () => {
     entering: { opacity: 1 },
     entered: { opacity: 1 },
     exiting: { opacity: 0 },
-    exited: { opacity: 0 }
+    exited: { opacity: 0 },
   };
 
-  const addPlayer = e => {
+  const addPlayer = (e) => {
     if (e.keyCode === 13) {
-      if (players.find(player => newPlayer === player.name)) {
+      if (players.find((player) => newPlayer === player.name)) {
         setError(true);
       } else {
         persistPlayers([...players, { name: newPlayer, checked: true }]);
@@ -48,10 +48,10 @@ const App = () => {
         <span>The Winner is {winner}</span>
       </StatContainer>
       <Transition in={error} timeout={1000}>
-        {state => (
+        {(state) => (
           <MessageBox
             style={{
-              ...messageTransitionStyle[state]
+              ...messageTransitionStyle[state],
             }}
           >
             Player already exists
@@ -59,7 +59,7 @@ const App = () => {
         )}
       </Transition>
       <Wheel
-        players={players.filter(player => player.checked)}
+        players={players.filter((player) => player.checked)}
         setWinner={setWinner}
       />
       <PlayerContainer>
@@ -69,7 +69,7 @@ const App = () => {
               <Player key={i}>
                 <input
                   type="checkbox"
-                  onChange={event => {
+                  onChange={(event) => {
                     if (player.checked !== event.target.checked) {
                       const newPlayers = [...players];
                       newPlayers[i].checked = event.target.checked;
@@ -86,7 +86,7 @@ const App = () => {
         </PlayerList>
         <PlayerAdd
           onKeyUp={addPlayer}
-          onChange={e => setNewPlayer(e.target.value)}
+          onChange={(e) => setNewPlayer(e.target.value)}
           value={newPlayer}
           type="text"
           placeholder="Add player"
