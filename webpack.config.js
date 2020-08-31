@@ -165,7 +165,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CopyWebpackPlugin([{ from: "public" }]),
+    new CopyWebpackPlugin({ patterns: [{ from: "public" }] }),
     new HtmlWebPackPlugin(
       Object.assign(
         {},
@@ -216,9 +216,9 @@ module.exports = {
     new WorkboxWebpackPlugin.GenerateSW({
       clientsClaim: true,
       exclude: [/\.map$/, /asset-manifest\.json$/],
-      importWorkboxFrom: "cdn",
+      // importWorkboxFrom: "cdn",
       navigateFallback: publicUrl + "/index.html",
-      navigateFallbackBlacklist: [
+      navigateFallbackDenylist: [
         // Exclude URLs starting with /_, as they're likely an API call
         new RegExp("^/_"),
         // Exclude any URLs whose last part seems to be a file extension
