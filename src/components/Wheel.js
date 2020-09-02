@@ -76,7 +76,7 @@ export const Wheel = ({ players, setWinner }) => {
                   <Text
                     skew={skewAngle}
                     rotate={sectionAngle / 2}
-                    color={colors[i]}
+                    color={colors[i % colors.length]}
                   >
                     {player}
                   </Text>
