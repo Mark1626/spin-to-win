@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/spin-to-win/static/js/main.51afba48.chunk.js",
+    "main.js": "/spin-to-win/static/js/main.db5eb348.chunk.js",
     "runtime-main.js": "/spin-to-win/static/js/runtime-main.cc15c827.js",
     "static/js/2.4404c29e.chunk.js": "/spin-to-win/static/js/2.4404c29e.chunk.js",
     "favicon.ico": "/spin-to-win/favicon.ico",
@@ -17,6 +17,6 @@
   "entrypoints": [
     "static/js/runtime-main.cc15c827.js",
     "static/js/2.4404c29e.chunk.js",
-    "static/js/main.51afba48.chunk.js"
+    "static/js/main.db5eb348.chunk.js"
   ]
 }
