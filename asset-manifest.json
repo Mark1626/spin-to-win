@@ -12,7 +12,7 @@
     "robots.txt": "/spin-to-win/robots.txt",
     "service-worker.js": "/spin-to-win/service-worker.js",
     "static/js/2.4404c29e.chunk.js.LICENSE.txt": "/spin-to-win/static/js/2.4404c29e.chunk.js.LICENSE.txt",
-    "workbox-dce9cbc5.js": "/spin-to-win/workbox-dce9cbc5.js"
+    "workbox-8a532145.js": "/spin-to-win/workbox-8a532145.js"
   },
   "entrypoints": [
     "static/js/runtime-main.cc15c827.js",
